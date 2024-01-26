@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="regione">Regione:</label>
+    <select id="regione" onchange="popolaProvince()">
+      <option value="">Seleziona una regione</option>
+      <option value="lombardia">Lombardia</option>
+      <option value="lazio">Lazio</option>
+    </select>
+  
+    <label for="provincia">Provincia:</label>
+    <select id="provincia" onchange="popolaComuni()">
+      <option value="">Seleziona una provincia</option>
+    </select>
+  
+    <label for="comune">Comune:</label>
+    <select id="comune">
+      <option value="">Seleziona un comune</option>
+    </select>
+  
+    <script src="main.js"></script>
+</body>
+</html>
